@@ -16,7 +16,7 @@ func main() {
 	index := flag.String("index", "index.html", "name of the main (index) file")
 	log := flag.String("log", "true", "whether to print log to stdout")
 	flag.Parse()
-	if os.Args[0] == "help" {
+	if os.Args[1] == "help" {
 		flag.PrintDefaults()
 		os.Exit(0)
 	}
